@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    padding: 0 15px 5px 0;
+    .logocontainer{
+        flex: 1;
+    }
+    .hamburger {
+        display: none;
+        padding: 5px;
+        margin: 3px;
+        cursor: pointer;
+    }
+}
+
+.navcontainer {
+    position: absolute;
+    background-color: red;
+    left: 0;
+    height: 100%;
+    width: 120px;
+    nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        background-color: rgba(0,0,0, 0.1);
+        border: none;
+        padding: 3px;
+        margin: 3px;
+        width: 100%;
+        cursor: pointer;
+        i {
+            padding: 3px;
+            margin: 3px;
+        }
+    }
+    }
+}
+
+.main-display {
+    background-color: rgb(243, 181, 181);
+    height: 100vh;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .list-container {
+        background-color: #fff;
+        width: fit-content;
+        width: 50%;
+        
+    }
+}
+.listelements {
+            .todoitem{
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+            list-style: none;
+        }
+    }
+
+    .newprojectform {
+        display: none;
+        position: absolute;
+        background-color: rgb(224, 91, 91);
+        margin: 3px;
+        form {
+            #projectname {
+            border: none;
+            height: 1.3rem;
+            background-color: rgba(0,0,0,0.1);
+            color: white;
+            padding-bottom: 3px;
+            } 
+           
+        } 
+        button {
+            border: none;
+            padding: 2px;
+            margin: 2px
+            }
+        
+    }
+
+    .newtodoform {
+        position: absolute;
+        display: none;
+        padding: 3px;
+        margin: 3px;
+        background-color: rgb(224, 91, 91);
+        form {
+            display: flex;
+            flex-direction: column;
+            #todoname {
+                height: 1.3rem;
+            }
+            input{
+                border: none;
+                margin:2px;
+
+            }
+        }
+       
+    }

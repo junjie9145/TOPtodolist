@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 5px 0;
+}
+
+.header .logocontainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header .hamburger {
+  display: none;
+  padding: 5px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.navcontainer {
+  position: absolute;
+  background-color: red;
+  left: 0;
+  height: 100%;
+  width: 120px;
+}
+
+.navcontainer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navcontainer nav button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 3px;
+  margin: 3px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.navcontainer nav button i {
+  padding: 3px;
+  margin: 3px;
+}
+
+.main-display {
+  background-color: #f3b5b5;
+  height: 100vh;
+  margin-left: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-display .list-container {
+  background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 50%;
+}
+
+.listelements .todoitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: justify;
+  list-style: none;
+}
+
+.newprojectform {
+  display: none;
+  position: absolute;
+  background-color: #e05b5b;
+  margin: 3px;
+}
+
+.newprojectform form #projectname {
+  border: none;
+  height: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding-bottom: 3px;
+}
+
+.newprojectform button {
+  border: none;
+  padding: 2px;
+  margin: 2px;
+}
+
+.newtodoform {
+  position: absolute;
+  display: none;
+  padding: 3px;
+  margin: 3px;
+  background-color: #e05b5b;
+}
+
+.newtodoform form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newtodoform form #todoname {
+  height: 1.3rem;
+}
+
+.newtodoform form input {
+  border: none;
+  margin: 2px;
+}
+/*# sourceMappingURL=styles.css.map */

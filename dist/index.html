@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list The Odin Project</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/all.css">
+</head>
+<body>
+    <header>
+       <div class="header"> 
+            <div class="logocontainer">
+                <h1 class="logo">To Do List</h1>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="navcontainer">
+            <nav>
+                <button id="today"><i class="fas fa-calendar-day"></i>Today</button>
+                <button id="week"><i class="fas fa-calendar-week"></i>This Week</button>
+                <h3>Projects</h3>
+                <div id="showprojects"></div>
+                <button id="newprojectbtn">New Project<i class="fas fa-plus"></i></button> 
+            </nav>
+        </div>  
+    </header>
+    <section class="main-display">
+        <div id="active-project-container"></div>
+        <div class="newprojectform">
+            <form action="submit">
+                <input type="text" id="projectname" placeholder="Please Enter Project Name" required>
+            </form>
+            <button class="enter" id="submitproject">Enter</button>
+            <button class="cancel">Cancel</button>
+        </div>
+        <div class="newtodoform">
+            <form action="submit">
+                <input type="text" id="todoname" name="todo" placeholder="Enter New Todo Name" required>
+                <div class="date">
+                    <label for="duedate">Due Date</label>
+                    <input name ="duedate" type="date" id="tododate" required>
+                </div>
+            </form>
+            <button class="enter" id="submittodo">Enter</button>
+            <button class="cancel" id="canceltodoform">Cancel</button>
+        </div>
+        
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
