@@ -5,6 +5,7 @@ import { setActive, projects } from "./project";
 
 function listDisplayFactory() {
     const projectDisplay = document.getElementById("active-project-container")
+    projectDisplay.textContent = "";
     const listContainer = document.createElement('div');
     listContainer.classList.add('listdisplay');
     
@@ -53,7 +54,7 @@ const renderTodo = () => {
             
             const todoDate = document.createElement('div');
             todoDate.classList.add("duedate");
-            todoDate.textContent = format(item.dueDate, "mm/dd/yyyy");
+            todoDate.textContent = format(item.dueDate, "MM/dd/yyyy");
             
             const deleteTodo = document.createElement('div');
             deleteTodo.classList.add("fas", "fa-trash", "deletetodo");
@@ -70,13 +71,15 @@ const renderTodo = () => {
 
 const projectButtons = () => {
     const projectBtns = document.querySelector('#showprojects');
-        projects.forEach(project => {
-        const projectBtn =  document.createElement('button');
-        projectBtn.classList.add('projectbtn');
-        projectBtn.textContent = project.name
-        projectBtns.appendChild(projectBtn);
-    })
-return projectBtns;
+    const projectBtn =  document.createElement('button');
+    let index = projects.length
+
+    projectBtn.classList.add('projectbtn');
+    
+    projectBtn.textContent = projects[index - 1].name
+
+    projectBtns.appendChild(projectBtn);
+    return projectBtns;
 }
 
 export{

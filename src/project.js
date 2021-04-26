@@ -1,16 +1,18 @@
 import { todoFactory } from "./todoitems"
+import { projectButtons } from "./DOMfactories";
 
 let projects = [];
 
 function projectFactory(name) {
     clearActive();
-    return projects.push(
+    projects.push(
         {
             name,
             todoList: [],
             active: true
         }
-    )
+    );
+    projectButtons()
 };
 
    
